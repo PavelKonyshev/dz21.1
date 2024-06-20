@@ -1,7 +1,7 @@
 from django.shortcuts import render,get_object_or_404
-from django.views.generic import ListView, DetailView, TemplateView, CreateView
+from django.views.generic import ListView, DetailView, TemplateView
 
-from .models import Category, Product
+from .models import Product
 
 class ProductListView(ListView):
     model = Product
